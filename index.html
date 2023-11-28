@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry Bakery</title>
+ 
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="navbar-container" id="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Berry Bakery">
+        </div>
+        <nav class="nav-list" id="mainListDiv">
+          <ul>
+            <li><a href="#top-menu">Top Menu</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </nav>
+        <div class="media-button">
+          <button class="main-media-button" id="mediaButton" onclick="showMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- slideshow banner -->
+        <div class="slideshow-container">
+          <div class="banner fade">
+            <div class="text-inside">
+              <div class="subtitle">New Menu</div>
+              <div class="title">Pistachio Macaron</div>
+            </div>
+            <img src="img/slide-1.png" alt="" style="width: 100%;">
+          </div>
+
+          <div class="banner fade">
+            <div class="text-inside">
+              <div class="subtitle">Chocolate day event</div>
+              <div class="title">50% Discount</div>
+            </div>
+            <img src="img/slide-2.png" alt="" style="width: 100%;">
+          </div>
+
+          <div class="banner fade">
+            <div class="text-inside">
+              <div class="subtitle">1 December 2023</div>
+              <div class="title">Berry Bakery’s 5th Anniversary</div>
+            </div>
+            <img src="img/slide-3.png" alt="" style="width: 100%;">
+          </div>
+
+          <!-- next and prev button -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- dots -->
+        <div style="text-align: center;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="content">
+          <div class="article-container">
+            <!-- content 1 -->
+            <article id="content-1">
+              <h1 class="content-title" id="top-menu">This Month's Top Menu</h1>
+              
+              <div class="inner-content">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/macaron.png" alt="Macaron" style="width:100%">
+                  </div>
+                  <div class="card-container">
+                    <h3 class="menu-title">Macaron</h3>
+                    <p class="price">10k</p>
+                    <p class="variant">Variant: Chocolate, Pistachio, Matcha</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/cupcake.png" alt="Cupcake" style="width:100%">
+                  </div>
+                  <div class="card-container">
+                    <h3 class="menu-title">Cupcake</h3>
+                    <p class="price">15k</p>
+                    <p class="variant">Variant: Chocolate, Cotton Candy, Vanilla</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/cheesecake.png" alt="Cheesecake" style="width:100%">
+                  </div>
+                  <div class="card-container">
+                    <h3 class="menu-title">Cheesecake</h3>
+                      <p class="price">18k</p>
+                      <p class="variant">Variant: Blueberry, Original</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/sachertorte.jpg" alt="Sachertorte" style="width:100%">
+                  </div>
+                  <div class="card-container">
+                    <h3 class="menu-title">Sachertorte</h3>
+                    <p class="price">18k</p>
+                    <p class="variant">Variant: -</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- content 2 -->
+            <article id="content-2">
+              <div class="inner-content-2">
+                <h1 class="content-title-white" id="about-us">About Us</h1>
+                <img src="img/about-us.png" alt="About Us">
+                <p class="content-about">Berry Bakery was founded in Jakarta, 2003, by Allie Allison together with Chef Harry Harrison. As the time passed, we recruited more staff and chefs. Until now, there are about 40 staff and 5 chefs who joined our family. In 2007, we were proudly opened a new branch store in Bandung.</p>
+              </div>
+            </article>
+
+            <!-- content 3 -->
+            <article id="content-3">
+              <h1 class="content-title" id="location">Location</h1>
+              <div class="inner-content inner-content-3">
+                <img src="img/location.png" alt="Location">
+                <ul>
+                  <li>Jl. Pelangi Merah Biru no. 15, Jakarta Barat</li>
+                  <li>Jl. Girang Gembira no. 45, Bandung</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- aside -->
+          <aside id="aside" class="aside">
+            <h2>Find Us on Social Media</h2>
+            <img src="img/bakery-aside.png" alt="Berry Bakery" id="aside-img">
+            <a href="#" class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 50 40" fill="none" class="social-icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.725 39.9995C34.5925 39.9995 44.9125 24.6084 44.9125 11.2629C44.9125 10.8248 44.9125 10.39 44.8825 9.95676C46.89 8.52916 48.6225 6.75664 50 4.72849C48.13 5.54567 46.1425 6.08157 44.11 6.31785C46.25 5.05517 47.8525 3.07144 48.62 0.730688C46.605 1.90721 44.4025 2.73756 42.105 3.18308C38.22 -0.883094 31.7225 -1.0801 27.59 2.74485C24.9275 5.21112 23.795 8.8883 24.6225 12.3957C16.375 11.9872 8.69 8.15242 3.48 1.84397C0.757501 6.45899 2.15 12.3607 6.6575 15.3242C5.025 15.2774 3.4275 14.8447 2 14.062V14.1902C2.0025 18.9972 5.445 23.1363 10.23 24.0888C8.72 24.495 7.135 24.5539 5.6 24.261C6.9425 28.3764 10.795 31.1951 15.1825 31.2763C11.55 34.0872 7.0625 35.6135 2.4425 35.6086C1.6275 35.6061 0.8125 35.5593 0 35.4634C4.6925 38.4268 10.15 39.9995 15.725 39.9922" fill="#FFA5AA"/>
+              </svg>
+              Twitter: @berry_bakery101
+            </a>
+            <a href="#" class="social">
+              <img src="img/facebook.svg" alt="" class="social-icon">
+              Facebook: @berry_bakery
+            </a>
+            <a href="#" class="social">
+              <img src="img/whatsapp.svg" alt="" class="social-icon">
+              Whatsapp: +62818067982
+            </a>
+          </aside>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <img src="img/logo-white.png" alt="Logo White">
+        <div class="footer-text">
+          <p>Berry Bakery Website since 2023</p>
+          <p>Made by &copy;Vivian Justiana </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>
